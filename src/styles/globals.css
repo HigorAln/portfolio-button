@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  @apply bg-style-background;
+  @apply font-DM;
+}
+
+.shadow_button_navigate{
+  box-shadow: inset 0px 1px 0px 0px var(--token-455ad80a-1cc4-4f5b-8395-5a4c9f929741, rgb(38, 38, 38));
+}
+
+.transform-50 {
+  transform-origin: 50% 50% 0px;
+}
