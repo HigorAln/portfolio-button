@@ -14,3 +14,12 @@ html, body {
 .transform-50 {
   transform-origin: 50% 50% 0px;
 }
+
+*::selection {
+  background: #ff9a9e;
+  @apply text-style-background;
+}
+
+.border-dotted {
+  @apply w-full border-t-style-g-3 border-t border-dashed;
+}

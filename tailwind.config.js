@@ -10,7 +10,7 @@ module.exports = {
 
           "g-3": "#333333",
           "g-ed": "#ededed",
-          "g-e6": "#e6e6e6",
+          "g-e6": "#6e6e6e",
 
           "g-0": "#ffffff12",
           "g-2": "#1c1c1c",

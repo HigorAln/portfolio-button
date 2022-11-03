@@ -3,6 +3,7 @@ import React from "react";
 import { motion as m } from "framer-motion";
 import classNames from "classnames";
 import { ButtonNavigate } from "./ButtonNavigate";
+import { ActuallyProps } from "../pages";
 
 const container = {
   hidden: { opacity: 0 },
@@ -14,7 +15,11 @@ const container = {
   },
 };
 
-export function Navigation() {
+interface Props {
+  handleChange: React.Dispatch<React.SetStateAction<ActuallyProps>>;
+}
+
+export function Navigation({ handleChange }: Props) {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
@@ -26,8 +31,11 @@ export function Navigation() {
       <m.button
         initial={{ width: "40px", height: "40px" }}
         whileHover={{ width: "65px", height: "65px" }}
-        onClick={() => setIsOpen(!isOpen)}
-        className="group flex items-center justify-center bg-style-g-2 box-border rounded-full shadow_button_navigate cursor-default"
+        onClick={() => {
+          setIsOpen(!isOpen);
+          handleChange("");
+        }}
+        className="group flex items-center justify-center select-none bg-style-g-2 box-border rounded-full shadow_button_navigate cursor-default"
       >
         {isOpen ? (
           <img
@@ -52,7 +60,11 @@ export function Navigation() {
           variants={container}
         >
           {buttonObject.map((e) => (
-            <ButtonNavigate key={e.name} {...e} />
+            <ButtonNavigate
+              key={e.name}
+              handleChange={() => handleChange(e.name as any)}
+              {...e}
+            />
           ))}
         </m.div>
       )}
@@ -76,13 +88,16 @@ const buttonObject = [
   {
     name: "Twitter",
     icon: "twitter",
+    url: "https://twitter.com/HigorAllan4",
   },
   {
     name: "Github",
     icon: "github",
+    url: "https://github.com/higoraln",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
+    url: "https://www.linkedin.com/in/higor-allan/",
   },
 ];
