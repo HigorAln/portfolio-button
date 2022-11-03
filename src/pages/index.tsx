@@ -30,7 +30,7 @@ export default function Home() {
       <Head>
         <title>Portfolio - Higor </title>
       </Head>
-      <div className="h-auto min-h-screen pt-[60px] flex justify-center">
+      <div className="h-auto min-h-screen pt-[60px] pb-[30px] flex justify-center">
         {backToPortfolio && (
           <button onClick={handleBack}>
             <BsArrowLeft
