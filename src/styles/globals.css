@@ -23,3 +23,17 @@ html, body {
 .border-dotted {
   @apply w-full border-t-style-g-3 border-t border-dashed;
 }
+
+body::-webkit-scrollbar {
+  width: 0.4rem;
+  @apply bg-style-background;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-style-g-e6;
+  border-radius: 2px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  @apply bg-style-g-ed;
+}
