@@ -22,13 +22,13 @@ export const projects: ProjectProps[] = [
     year: "03/2022",
     name_project: "Feedget",
     description: "Feedback pop-up",
-    link: "https://github.com/HigorAln/Feedget/tree/master/web",
+    link: "https://github.com/HigorAln/Feedget",
   },
   {
     year: "03/2022",
     name_project: "Simple landing page",
     description: "Lading page just me to practice",
-    link: "https://github.com/HigorAln/dashgo",
+    link: "https://github.com/HigorAln/landing-page",
   },
   {
     year: "01/2022",
@@ -47,6 +47,12 @@ export const projects: ProjectProps[] = [
     name_project: "Ignews",
     description: "Blog with serverless payment system",
     link: "https://github.com/HigorAln/ignews",
+  },
+  {
+    year: "01/2022",
+    name_project: "Dashgo",
+    description: "Dashboard for controller flow of the users",
+    link: "https://github.com/HigorAln/dashgo",
   },
   {
     year: "09/2022",
