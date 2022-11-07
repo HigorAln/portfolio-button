@@ -15,6 +15,8 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
             rel="stylesheet"
           />
+
+          <meta name="theme-color" content="#161616" />
         </Head>
         <body>
           <Main />
